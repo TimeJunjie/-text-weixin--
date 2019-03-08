@@ -1,0 +1,46 @@
+<!--pages/play/play.wxml-->
+<view class="main">
+    <view class="score_info">
+        <text class="score">得分：{{score}}</text>
+        <text class="time">时间：</text>
+    </view>
+<!-- 题号部分 -->
+<view class="title">
+<text class="title_num"> {{current+1}}.{{questionList[current].type}} </text>
+
+</view>
+<!-- 问题部分 -->
+<view class="question ">
+    <!-- 题目 -->
+    <text class="question_name">{{questionList[current].question}}</text>
+    <!-- 四个选项 携带参数变量会自动小写-->
+    <view class="question_item1" bindtap="selectItem" data-selectId="1"  >
+        <text class="question_item_name">A、{{questionList[current].items[0].name}}</text>
+        <radio class="question_select" checked="{{myChecked===1?true:false}}"> </radio>
+    </view>
+       <!-- 选项2 -->
+    <view class="question_item2 " bindtap="selectItem"  data-selectId="10">
+        <text class="question_item_name">B、{{questionList[current].items[1].name}}</text>
+        <radio class="question_select"  checked="{{myChecked===10?true:false}}"> </radio>
+    </view>
+       <!-- 选项3 -->
+    <view class="question_item3"  bindtap="selectItem" data-selectId="100">
+        <text class="question_item_name">C、{{questionList[current].items[2].name}}</text>
+        <radio class="question_select"  checked="{{myChecked===100?true:false}}" > </radio>
+    </view>
+       <!-- 选项4 -->
+    <view class="question_item2" bindtap="selectItem"  data-selectId="1000">
+        <text class="question_item_name">D、{{questionList[current].items[3].name}}</text>
+        <radio class="question_select"  checked="{{myChecked===1000?true:false}}"> </radio>
+    </view>
+
+    
+</view>
+<!-- 下一题 -->
+<view class="next" bindtap='next_question'>
+    <text class="next_detail">下一题</text>
+</view>
+<view class="score">{{score}}</view>
+
+</view>
+

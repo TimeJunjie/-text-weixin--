@@ -1,0 +1,35 @@
+<!--pages/begin/begin.wxml-->
+<view class="main">
+    <!-- 标题部分 -->
+<view class="title css-shadow">
+    <!-- 如果标签文字背后换行再写会有空行的 -->
+    <text class="" selectable="false" space="false" decode="false">小程序分为刷题模式和考试模式两种，收录多选题、单选题、判断题等，其中多选题3分，单选题或判断题2分。
+    </text>
+      
+</view>
+<!-- 选择部分 -->
+<view class="info ">
+    <navigator class="practice_wrap" url='../play/play'>
+        <view class="practice ">
+            <text >
+            刷题模式
+            </text>
+              
+        </view>
+    </navigator>
+    <navigator class="test_wrap" >
+      <view class="test">
+           <text >
+              模拟考试
+          </text>
+              
+      </view>
+ </navigator>
+
+
+</view>
+
+
+
+
+</view>
