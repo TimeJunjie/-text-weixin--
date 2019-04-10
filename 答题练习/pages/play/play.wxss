@@ -2,16 +2,22 @@
 /* 题号部分 */
 .main{
     padding: 20rpx;
+    background: #f1f1f1;
+    
 }
 /* 得分栏部分 */
 .score_info{
     display: flex;
     justify-content: space-between;
-    padding: 50rpx;
+    padding: 10rpx;
+    width: 100%;
     font-family: '黑体';
+    background: #fff;
+    
 }
 .score_info .score{
     width: 40%;
+   
     /* background: skyblue; */
 }
 .score_info .time{
@@ -40,8 +46,8 @@
    /* 题  目 */
 .question .question_name{
     display: flex;
-    justify-content: center;
-    font-size: 38rpx;
+    
+    font-size: 42rpx;
     margin-top: 10rpx;
 }
  .question_item1, .question_item2, .question_item3, .question_item4{
@@ -74,4 +80,14 @@
   -moz-box-shadow:2px 2px 10px #2db7f5; 
   -webkit-box-shadow:2px 2px 10px #2db7f5; 
   box-shadow:2px 2px 10px #2db7f5;
+}
+/* 答案解析 */
+.analysis{
+    line-height: 60rpx;
+    width: 100%;
+    height: 60rpx;
+    margin-top: 100rpx;
+    background: #fff;
+    border-radius: 10rpx;
+    padding: 20rpx;
 }
